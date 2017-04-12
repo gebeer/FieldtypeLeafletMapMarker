@@ -273,7 +273,11 @@ LINES;
             if ($options['maxZoom']) $inlineScript .= "$id.setMaxZoom();\n";
         }
 
+<<<<<<< HEAD
         $inlineScript .= "return $id.map;\n};\nvar map = initMap();</script>";
+=======
+        $inlineScript .= "\n});</script>";
+>>>>>>> leaflet103
 
         $this->page->inlineScript = $inlineScript;
 
