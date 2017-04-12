@@ -234,6 +234,10 @@ LINES;
                 // Need to escape returned single quotes and turn newlines into HTML breaks as this is going into a JS string
                 $popup = str_replace("'", "\\'", call_user_func($options['popupFormatter'], $page));
                 $popup = str_replace("\n", '<br/>', $popup);
+
+                // set $title and $url to empty strings since we don't need them anymore
+                $url = '';
+                $title = '';
             }
 
             $marker_icon = 'default_marker_icon';
